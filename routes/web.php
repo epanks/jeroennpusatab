@@ -21,7 +21,7 @@ Route::get('/home', function() {
     return view('home');
 })->name('home')->middleware('auth');
 
+Route::resource('paket', 'PaketController');
 
-
-Route::get('paket','PaketController@index');
-Route::get('paket/json','PaketController@json');
+// Route::get('paket','PaketController@index');
+// Route::get('paket/json','PaketController@json');
