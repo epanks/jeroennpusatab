@@ -20,3 +20,8 @@ Auth::routes();
 Route::get('/home', function() {
     return view('home');
 })->name('home')->middleware('auth');
+
+
+
+Route::get('paket','PaketController@index');
+Route::get('paket/json','PaketController@json');
